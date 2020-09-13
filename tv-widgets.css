@@ -1,0 +1,621 @@
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ----------------- Modified by Ryan Brown from TXG.ie for RED Express Deliveries Australia ------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+.transvirtual-loading {
+    display: block;
+    height: 100%;
+    width: 100%;
+    min-height: 100px;
+    z-index: 1000;
+    background: rgba( 255, 255, 255, .8 ) url('/CO-Favicon.gif') 50% 50% no-repeat;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.transvirtual-loading input {
+    display: none;
+}
+
+.transvirtual-loading .transvirtual-error {
+    display: none;
+}
+
+
+.transvirtual-error {
+    color: red;
+}
+
+
+    /*Track Widget Styles*/
+    #transvirtual-track {
+        padding: 0px;
+        width: 100%;
+    }
+
+        #transvirtual-track .lbl {
+             padding: 0px;
+            width: 150px;
+            float: left;
+        }
+
+        #transvirtual-track .value {
+            padding: 10px; 
+        }
+
+    #transvirtual-track .transvirtual-button {
+        padding: 10px;
+        margin-left: 140px;
+    }
+
+#map {
+    height: 400px;
+    width: 400px;
+}
+
+.transvirtual-scanTable {
+    width: 100%;
+}
+
+    .transvirtual-scanTable th, .transvirtual-scanTable td {
+        border-bottom: 1px solid #ddd;
+        padding: 15px;
+        text-align: left;
+    }
+
+.transvirtual-title {
+    border-bottom: 1px solid #ddd;
+    margin: 15px;
+}
+
+
+
+
+/* END Track Style */
+
+
+/*Login Widget Styles*/
+
+#transvirtual-loginwidget {
+    padding: 40px !important;
+    width: 200px;
+}
+
+    #transvirtual-loginwidget .transvirtual-username {
+        padding: 10px;
+    }
+
+    #transvirtual-loginwidget .transvirtual-password {
+        padding: 10px;
+    }
+
+    #transvirtual-loginwidget .transvirtual-forgotpwd {
+        padding: 10px;
+    }
+
+    #transvirtual-loginwidget .transvirtual-forgotpwdtxt {
+        padding: 10px;
+    }
+
+    #transvirtual-loginwidget input[type=text], input[type=password] {
+        display: block !important;
+        width: 100% !important;
+        min-height: calc(1.5em + .75rem + 2px) !important;
+        padding: .375rem .75rem !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+        color: #495057 !important;
+        background-color: #fff !important;
+        background-clip: padding-box !important;
+        border: 1px solid #ced4da !important;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+        border-radius: .25rem !important;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+    }
+
+        #transvirtual-loginwidget input[type=text]:focus, input[type=password]:focus {
+            border-color: #333;
+        }
+
+
+    #transvirtual-loginwidget .transvirtual-loginbtn {
+        display: inline-block !important;
+        font-weight: 400 !important;
+        line-height: 1.5 !important;
+        color: #fff !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        vertical-align: middle !important;
+        cursor: pointer !important;
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+        background-color: #0d6efd !important;
+        border: 1px solid #0d6efd !important;
+        padding: .375rem .75rem !important;
+        font-size: 1rem !important;
+        border-radius: .25rem !important;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+    }
+
+
+/* END Login Style */
+
+
+/* Consignment Create/Quote Widget*/
+#transvirtual-quotewizard table.transvirtualRateSelection {
+    width: 100%;
+}
+
+#transvirtual-quotewizard table.transvirtualAddressSection {
+    width: 100%;
+}
+
+#transvirtual-quotewizard table.transvirtualSelectedRate {
+    width: 300px;
+}
+
+#transvirtual-quotewizard .transvirtual-buttonBack {
+    padding: 10px;
+    float: right;
+    margin-right: 100px;
+}
+
+#transvirtual-quotewizard .transvirtual-buttonForward {
+    padding: 10px;
+    float: right;
+    margin-right: 100px;
+}
+
+#transvirtual-quotewizard .transvirtual-buttonRefresh {
+    padding: 10px;
+}
+
+
+
+#transvirtual-quotewizard th, #transvirtual-quotewizard td {
+    padding: 20px !important;
+    font-size: 12px;
+    font-weight: 600 !important;
+}
+
+#transvirtual-quotewizard {
+    width: auto !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 0 !important;
+    word-wrap: break-word !important;
+    background-color: #fff !important;
+    background-clip: border-box !important;
+    border: 1px solid rgba(0, 0, 0, 0.000) !important;
+    border-radius: 6px !important;
+    padding: 0px !important;
+  }
+
+    #transvirtual-quotewizard .stepTitle {
+        font-size: 14px !important;
+        font-weight: 600;
+        padding: 20px 10px 20px 10px !important;
+
+    }
+
+    #transvirtual-quotewizard .lbl {
+        padding: 10px 10px 10px 0px !important;
+        width: 100%;
+        float: left;
+
+        font-size: 13px;
+        font-weight: 600;
+        color: #353640 !important;
+    }
+
+
+
+    #transvirtual-quotewizard .value {
+        padding: 0px 10px 0px 0px !important;
+    }
+
+        #transvirtual-quotewizard .value > input, #transvirtual-quotewizard .value textarea, #transvirtual-quotewizard .value span {
+            width: 100% !important;
+
+            
+        }
+
+        #transvirtual-quotewizard .value > input, #transvirtual-quotewizard .value textarea, #transvirtual-quotewizard .value span .SenderName {
+            width: 100% !important;
+            width: 100%;
+            height: 35px !important;
+            padding: 0px 10px 0px 10px !important;
+
+            margin-top: 0px;
+            margin-bottom: 20px;
+            border-style: none none solid;
+            border-width: 2px;
+            border-color: #cacaca #cacaca #c41818;
+            border-radius: 0px;
+            color: #000;
+
+            background-color: rgba(240, 240, 240, 0.50) !important;
+
+            
+        }
+
+            #transvirtual-quotewizard .value span > input {
+                width: 100%;
+                height: 35px !important;
+                padding: 0px 10px 0px 10px !important;
+
+                margin-top: 0px;
+                margin-bottom: 20px;
+                border-style: none none solid;
+                border-width: 2px;
+                border-color: #cacaca #cacaca #c41818;
+                border-radius: 0px;
+                color: #000;
+
+                background-color: rgba(240, 240, 240, 0.50) !important;
+            }
+
+    #transvirtual-quotewizard .tableRowAdd, #transvirtual-quotewizard .tableRowDelete {
+        font-size: 12px;
+        color: #c41818;
+        cursor: pointer;
+        margin-top: 0px !important;
+    }
+
+    #transvirtual-quotewizard th,
+    #transvirtual-quotewizard td {
+        border-bottom: 1px solid #ddd;
+        padding: 20px 15px 20px 15px !important;
+        text-align: left;
+    }
+
+    #transvirtual-quotewizard .transvirtualSelectedRate th,
+    #transvirtual-quotewizard .transvirtualSelectedRate td {
+        border-bottom: 1px solid #ddd;
+        padding: 1px;
+        text-align: left;
+    }
+
+    #transvirtual-quotewizard .tableLabel {
+        font-size: 13px;
+        font-weight: 600;
+
+        color: #353640;
+
+        padding: 10px;
+    }
+
+    #transvirtual-quotewizard .tableValue {
+        width: 100%;
+        height: 30px !important;
+        padding: 0px 10px 0px 10px !important;
+        font-size: 13px !important;
+        font-weight: 600;
+
+        margin-top: 0px;
+        border-style: none none solid;
+        border-width: 2px;
+        border-color: #cacaca #cacaca #c41818;
+        border-radius: 0px;
+        color: #353640;
+
+        background-color: rgba(240, 240, 240, 0.50) !important;
+    }
+
+.autoCompleteDiv {
+    position: relative;
+    vertical-align: top;
+}
+
+.tt-dropdown-menu {
+    /* width: 100%;*/
+    min-width: min-content;
+    max-width: max-content;
+    margin-top: 2px;
+    padding: 5px 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+}
+
+    .tt-suggestion.tt-cursor {
+        color: #262626;
+        background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+        background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    }
+
+        .tt-suggestion.tt-cursor a {
+            color: #ffffff;
+        }
+
+    .tt-suggestion p {
+        margin: 0;
+        width: auto;
+    }
+
+/* End Consignment Create/Quote Widget */
+
+/*CustomerAccountCreate Widget Styles*/
+
+#transvirtual-customeraccountcreatewidget {
+    padding: 10px;
+    width: 100%;
+}
+
+    #transvirtual-customeraccountcreatewidget .transvirtual-username {
+        padding: 10px;
+    }
+
+    #transvirtual-customeraccountcreatewidget .transvirtual-password {
+        padding: 10px;
+    }
+
+    #transvirtual-customeraccountcreatewidget input[type=text], input[type=password] {
+        width: 100%;
+        padding: 5px;
+        border: 2px solid #ccc;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+        #transvirtual-customeraccountcreatewidget input[type=text]:focus, input[type=password]:focus {
+            border-color: #333;
+        }
+
+
+    #transvirtual-customeraccountcreatewidget .transvirtual-loginbtn {
+        padding: 10px;
+        float: right;
+        padding: 5px 15px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+
+/* END CustomerAccountCreate Style */
+
+
+/*CustomerServiceTicketCreate Widget Styles*/
+
+    #transvirtual-customerserviceticketcreate {
+        padding: 10px;
+        width: 100%;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-connote {
+        padding: 10px;
+        width: 80%;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-name {
+        padding: 10px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-phone {
+        padding: 10px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-email {
+        padding: 10px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-subject {
+        padding: 10px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-notes {
+        padding: 10px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-notes > textarea {
+        width: 95%;
+        height: 100px;
+        padding: 5px;
+        border: 2px solid #ccc;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-notes > textarea:focus {
+        border-color: #333;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-generalEnquiry {
+        padding: 10px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-ticketheading {
+        padding: 10px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-finalButtons {
+        padding: 10px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-customerServiceTicketCreateButton {
+        float: right;
+        padding: 5px 15px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        margin-right: 6%;
+        width: 30%;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-customerServiceTicketBackButton {
+        float: left;
+        padding: 5px 15px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        margin-right: 6%;
+        width: 30%;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-customerServiceTicketValidateButton {
+        text-align: center;
+        float: right;
+        padding: 3px 10px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        width: 20%;
+        margin-top: -40px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-customerServiceTicketNoConnoteButton {
+        text-align: center;
+        float: right;
+        padding: 3px 10px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        width: 20%;
+        margin-top: -8px;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-noconnotebtn {
+        text-align: center;
+        padding: 5px 10px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-validatebtn {
+        text-align: center;
+        padding: 5px 10px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-savebtn {
+        text-align: center;
+        padding: 5px 10px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #transvirtual-customerserviceticketcreate .transvirtual-backbtn {
+        text-align: center;
+        padding: 5px 10px;
+        background: #ccc;
+        border: 0 none;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #transvirtual-customerserviceticketcreate input[type=text], input[type=password] {
+        width: 95%;
+        padding: 5px;
+        border: 2px solid #ccc;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    #transvirtual-customerserviceticketcreate input[type=text]:focus, input[type=password]:focus {
+        border-color: #333;
+    }
+
+    /* END CustomerServiceTicketCreate Style */
+
+
+
+
+
+
+    /* Custom CSS - Written by Ryan Brown from TXG.ie for RED Express Deliveries Australia. */
+
+    .transvirtual-forwardbtn {
+        font-size: 14px;
+        padding: 9px 15px 9px 15px;
+        color: white;
+        background-color: #c41818;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .transvirtual-selectQuotebtn {
+        font-size: 14px;
+        padding: 9px 15px 9px 15px;
+        color: white;
+        background-color: #c41818;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .transvirtual-backbtn {
+        font-size: 14px;
+        padding: 9px 15px 9px 15px;
+        color: white;
+        background-color: #c41818;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .transvirtual-trackGo {
+        font-size: 14px;
+        padding: 9px 15px 9px 15px;
+        color: white;
+        background-color: #c41818;
+        border: none;
+        border-radius: 6px;
+    }
+
+    .transvirtual-searchbtn {
+        font-size: 14px;
+        padding: 9px 15px 9px 15px;
+        color: white;
+        background-color: #c41818;
+        border: none;
+        border-radius: 6px;
+    }
+
