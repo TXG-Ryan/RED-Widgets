@@ -1,0 +1,336 @@
+// Pops out the html file located in ./widgets/quote-wizard.html in a new window without a URL bar
+
+<a
+	href="/red10.webflow (4)/details/widgets/quote-wizard.html"
+	target="popup"
+	onclick="window.open('/red10.webflow (4)/details/widgets/quote-wizard.html','name','width=1000,height=700')"
+	class="button-11 v3 w-button"
+	>Launch</a
+>
+
+<a
+	href="/red10.webflow (4)/details/widgets/detailed-tracking.html"
+	target="popup"
+	onclick="window.open('/red10.webflow (4)/details/widgets/detailed-tracking.html','name','width=1000,height=700')"
+	class="button-11 v3 w-button"
+	>Launch</a
+>
+
+<!-- Custom Coded Details with Popup and Popout windows -->
+
+<div class="details-section">
+	<div class="w-layout-grid grid-9">
+		<div id="w-node-87f1e7527baf-d58b0cfd" class="div-block-68">
+			<div class="div-block-69">
+				<h1 class="heading-9">Quote Creation</h1>
+				<img src="../images/create-icon.svg" loading="lazy" alt="" class="image-11" />
+			</div>
+			<div class="widget">
+				<div class="text-block-19">
+					Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor
+					volutpat. Mauris blandit aliquet elit, eget tincidunt.
+				</div>
+			</div>
+			<a
+				href="/red10.webflow (4)/details/red-widgets/quote-wizard.html"
+				target="popup"
+				onclick="window.open('/red10.webflow (4)/details/widgets/quote-wizard.html','name','width=1000,height=700')"
+				class="button-11 v3 w-button"
+				>Launch</a
+			>
+		</div>
+		<div id="w-node-a8bc3aac9275-d58b0cfd" class="div-block-68">
+			<div class="div-block-69">
+				<h1 class="heading-9">Simple Tracking</h1>
+				<img src="../images/outline_gps_not_fixed_white_48dp_1outline_gps_not_fixed_white_48dp.png" loading="lazy" alt="" class="image-11" />
+			</div>
+			<div class="widget">
+				<div class="text-block-19">
+					Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor
+					volutpat. Mauris blandit aliquet elit, eget tincidunt.
+				</div>
+			</div>
+			<a data-w-id="b6f39a5c-5ee8-a0ec-f2a4-3dd188d850d4" href="#" class="button-11 v1 w-button">Launch</a>
+		</div>
+		<div id="w-node-d5f8b272e3da-d58b0cfd" class="div-block-68">
+			<div class="div-block-69">
+				<h1 class="heading-9">Detailed Tracking</h1>
+				<img src="../images/outline_gps_fixed_white_48dp_1outline_gps_fixed_white_48dp.png" loading="lazy" alt="" class="image-11" />
+			</div>
+			<div class="widget">
+				<div class="text-block-19">
+					Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor
+					volutpat. Mauris blandit aliquet elit, eget tincidunt.
+				</div>
+			</div>
+			<a
+				href="/red10.webflow (4)/details/widgets/detailed-tracking.html"
+				target="popup"
+				onclick="window.open('/red10.webflow (4)/details/red-widgets/detailed-tracking.html','name','width=1000,height=700')"
+				class="button-11 v3 w-button"
+				>Launch</a
+			>
+		</div>
+		<div id="w-node-a2cb577c99da-d58b0cfd" class="div-block-68">
+			<div class="div-block-69">
+				<h1 class="heading-9">Invoice Payments</h1>
+				<img src="../images/payments-white-48dp.svg" loading="lazy" alt="" class="image-11" />
+			</div>
+			<div class="widget">
+				<div class="text-block-19">
+					Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor
+					volutpat. Mauris blandit aliquet elit, eget tincidunt nibh.
+				</div>
+			</div>
+			<a data-w-id="537bdc36-af74-22c0-8a6b-227586c15a0e" href="#" class="button-11 v3 w-button">Launch</a>
+		</div>
+	</div>
+</div>
+
+<!-- Client Registration Custom Code for client-registration.html -->
+<div class="right-collection-wrapper">
+	<div class="content-wrapper-panel">
+		<div class="w-form">
+			<!--alert messages start-->
+			<?php echo $alert; ?>
+			<!--alert messages end-->
+			<form
+				id="wf-form-Client-Registration-Form"
+				name="wf-form-Client-Registration-Form"
+				data-name="Client Registration Form"
+				method="post"
+				action="http://sendemail.php"
+				redirect="/client-registration-success"
+				data-redirect="/client-registration-success"
+				class="form-4"
+			>
+				<div class="div-block-47 noline">
+					<h1 class="heading-11">Section 1</h1>
+					<h1 class="heading-10">Company Information</h1>
+					<div class="text-block-20">
+						Please fill out this section with your company&#x27;s information. If you have any questions please contact one of our friendly account managers for assistance.
+					</div>
+					<input type="text" class="form-field w-input" maxlength="256" name="Full-Name" data-name="Full Name" placeholder="Full Name" id="Full-Name-3" required="" /><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="ABN-Number-2"
+						data-name="ABN Number 2"
+						placeholder="A.B.N / A.C.N Number"
+						id="ABN-Number-2"
+						required=""
+					/><select id="What-is-your-GST-Registeration" name="What-is-your-GST-Registeration" data-name="What is your GST Registeration?" required="" class="select-field w-select">
+						<option value="">Are you GST Registered? Please select an option</option>
+						<option value="Yes">Yes, we are registered for GST</option>
+						<option value="No">No, we are not registered for GST</option>
+						<option value="Not For Profit">None of the above, we are a not for profit organisation</option></select
+					><input type="text" class="form-field w-input" maxlength="256" name="Trading-As" data-name="Trading As" placeholder="Trading as (Business name)" id="Trading-As-3" required="" /><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="Business-Registration-Number-2"
+						data-name="Business Registration Number 2"
+						placeholder="Business Registration Number"
+						id="Business-Registration-Number-2"
+						required=""
+					/><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="Business-Address"
+						data-name="Business Address"
+						placeholder="Business Address"
+						id="Business-Address-3"
+						required=""
+					/><input type="text" class="form-field w-input" maxlength="256" name="Postal-Address" data-name="Postal Address" placeholder="Postal Address" id="Postal-Address-3" required="" /><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="Business-Phone"
+						data-name="Business Phone"
+						placeholder="Business Phone"
+						id="Business-Phone-3"
+						required=""
+					/><input type="text" class="form-field w-input" maxlength="256" name="After-Hours-Phone" data-name="After Hours Phone" placeholder="After Hours Phone" id="After-Hours-Phone-3" /><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="Fax-Number"
+						data-name="Fax Number"
+						placeholder="Fax Number"
+						id="Fax-Number-3"
+					/><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="Contact-For-Account"
+						data-name="Contact For Account"
+						placeholder="Contact Name For Account"
+						id="Contact-For-Account-3"
+						required=""
+					/><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="Date-Of-Commencement"
+						data-name="Date Of Commencement"
+						placeholder="Date Of Commencement"
+						id="Date-Of-Commencement-3"
+					/><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="Monthly-Credit-Req"
+						data-name="Monthly Credit Req"
+						placeholder="Monthly Credit Requirements"
+						id="Monthly-Credit-Req-3"
+					/><input type="text" class="form-field w-input" maxlength="256" name="Bank-And-Branch" data-name="Bank And Branch" placeholder="Bank And Branch" id="Bank-And-Branch-3" required="" /><input
+						type="text"
+						class="form-field w-input"
+						maxlength="256"
+						name="Company-Type"
+						data-name="Company Type"
+						placeholder="Are you a sole trader / partnership / private co / public co?"
+						id="Company-Type-3"
+						required=""
+					/>
+				</div>
+				<div class="div-block-47">
+					<h1 class="heading-11">Section 2</h1>
+					<h1 class="heading-10">Trade Reference</h1>
+					<div class="text-block-20">Must be companies you have a long standing business relationship with.</div>
+					<input type="text" class="form-field light w-node-c280634d6eef-4e8b0cf9 w-input" maxlength="256" name="TR-1-Name" data-name="TR 1 Name" placeholder="Name" id="TR-1-Name" required="" /><input
+						type="text"
+						class="form-field light w-node-c280634d6ef4-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-1-Phone"
+						data-name="TR 1 Phone"
+						placeholder="Phone"
+						id="TR-1-Phone"
+						required=""
+					/><input
+						type="text"
+						class="form-field light w-node-c280634d6ef5-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-1-Contact"
+						data-name="TR 1 Contact"
+						placeholder="Contact"
+						id="TR-1-Contact"
+						required=""
+					/><input
+						type="text"
+						class="form-field light w-node-c280634d6efa-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-1-Commenced"
+						data-name="TR 1 Commenced"
+						placeholder="Commenced"
+						id="TR-1-Commenced"
+						required=""
+					/><textarea placeholder="Trading Terms" maxlength="5000" id="TR-1-Trading-Terms-2" name="TR-1-Trading-Terms" data-name="TR 1 Trading Terms" class="textarea w-input"></textarea>
+				</div>
+				<div class="div-block-47">
+					<h1 class="heading-11">Section 3</h1>
+					<h1 class="heading-10">Trade Reference 2</h1>
+					<div class="text-block-20">Must be companies you have a long standing business relationship with.</div>
+					<input type="text" class="form-field light w-node-997b56cc8350-4e8b0cf9 w-input" maxlength="256" name="TR-2-Name" data-name="TR 2 Name" placeholder="Name" id="TR-2-Name" required="" /><input
+						type="text"
+						class="form-field light w-node-997b56cc8351-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-2-Phone"
+						data-name="TR 2 Phone"
+						placeholder="Phone"
+						id="TR-2-Phone"
+						required=""
+					/><input
+						type="text"
+						class="form-field light w-node-997b56cc8352-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-2-Contact"
+						data-name="TR 2 Contact"
+						placeholder="Contact"
+						id="TR-2-Contact"
+						required=""
+					/><input
+						type="text"
+						class="form-field light w-node-997b56cc8353-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-2-Commenced"
+						data-name="TR 2 Commenced"
+						placeholder="Commenced"
+						id="TR-2-Commenced"
+						required=""
+					/><textarea placeholder="Trading Terms" maxlength="5000" id="TR-2-Trading-Terms" name="TR-2-Trading-Terms" data-name="TR 2 Trading Terms" class="textarea w-input"></textarea>
+				</div>
+				<div class="div-block-47">
+					<h1 class="heading-11">Section 4</h1>
+					<h1 class="heading-10">Trade Reference 3</h1>
+					<div class="text-block-20">Must be companies you have a long standing business relationship with.</div>
+					<input type="text" class="form-field light w-node-ed0f767a1cc7-4e8b0cf9 w-input" maxlength="256" name="TR-3-Name" data-name="TR 3 Name" placeholder="Name" id="TR-3-Name" required="" /><input
+						type="text"
+						class="form-field light w-node-ed0f767a1cc8-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-3-Phone"
+						data-name="TR 3 Phone"
+						placeholder="Phone"
+						id="TR-3-Phone"
+						required=""
+					/><input
+						type="text"
+						class="form-field light w-node-ed0f767a1cc9-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-3-Contact"
+						data-name="TR 3 Contact"
+						placeholder="Contact"
+						id="TR-3-Contact"
+						required=""
+					/><input
+						type="text"
+						class="form-field light w-node-ed0f767a1cca-4e8b0cf9 w-input"
+						maxlength="256"
+						name="TR-3-Commenced"
+						data-name="TR 3 Commenced"
+						placeholder="Commenced"
+						id="TR-3-Commenced"
+						required=""
+					/><textarea placeholder="Trading Terms" maxlength="5000" id="TR-3-Trading-Terms" name="TR-3-Trading-Terms" data-name="TR 3 Trading Terms" class="textarea w-input"></textarea>
+				</div>
+				<div class="rtb-w-margin w-richtext">
+					<h3>Terms and Conditions</h3>
+					<p>
+						<strong>In consideration of the company providing credit facilities I / we (for and on behalf of the above named applicant) agree:</strong>
+					</p>
+					<ol start="" role="list">
+						<li>
+							To maintain the account on a strictly
+							<strong>seven (7) day, from date of Invoice,</strong> basis (or within month of purchase ).
+						</li>
+						<li>
+							That for the purpose of processing this application I / We consent to the Company making such inquiries it deems necessary from any source including credit reporting agencies and credit
+							providers and I / We acknowledge that company may need to provide information about Me / Us to those sources.
+						</li>
+						<li>
+							That I / We accept that liability jointly and severally with the applicant for all outstanding debts,service charges and costs of collection as though I / We were liable principal
+							debtors for the debt charges and costs not merely surety / sureties and I / We waive all rights as mere surety / sureties which are inconsistent therewith and I / We charge all my / our
+							property, real and personal, present and future, with the amount of indebtedness until discharged.
+						</li>
+						<li>That I / We have read and agreed to the terms and conditions set out in this application and that I /We had the opportunity of retaining a copy of the terms and conditions.</li>
+						<li>That the information provided by me / us is true.</li>
+					</ol>
+				</div>
+				<label id="agree" class="w-checkbox checkbox-field"
+					><input type="checkbox" id="I Agree" name="I-Agree" data-name="I Agree" required="" class="w-checkbox-input checkbox" /><span for="I Agree-2" class="checkbox-label w-form-label"
+						><strong>I agree to the applications Terms and Conditions</strong></span
+					></label
+				><input type="submit" value="Submit Application" data-wait="Please wait..." class="submit-button w-button" />
+			</form>
+			<div class="w-form-done">
+				<div>Thank you! Your submission has been received!</div>
+			</div>
+			<div class="w-form-fail">
+				<div>Oops! Something went wrong while submitting the form.</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Direct Operator Booings Custom Code for bookings.php -->
